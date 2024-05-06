@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   
+    <title>Pet Adoption Center</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <nav>
+        <div class="logo-container">
+            <a href="/">
+            <img src="logo.png" alt="">
+        </a>
+        </div>
+        <ul>
+            <li><a href="#about">About Us</a></li>
+            <li><a href="#sports">Services</a></li>
+            <li><a href="#registration">Calculator</a></li>
+            <li><a href="#contacts">Contacts</a></li>
+        </ul>
+    </nav>
+    <main>
+        <section class="hero">
+            <img src="banner3.png" alt="Sports Image">
+            
+            <div class="hero-content">
+                <!-- <h2 class="animated-text" >Adopt a Friend for Life</h2> -->
+            </div>
+        </section>
+        <section id="about" class="banner">
+            <h2 class="animated-text">Adopt a Friend for Life</h2>
+            <div class="banner-body">
+                <p class="grid-item" >We're dedicated to finding loving homes for our furry companions. We believe every animal deserves a safe and happy life. Our adoption center offers a welcoming space to meet our amazing pets. Let us help you find the perfect furry friend to bring joy and companionship into your home.</p>
+            </div>
+        </section>
+        
+        <section id="sports" class="grid-container">
+            <h2>Our Services</h2>
+            <div class="pets-container" >
+              <div class="grid-item">
+                <div class="imgBox"    >
+            <img src="public/adop.jpg" alt="Soccer Ball">
+            </div>
+                <h4 class="animatedTitle" >Pet Adoption</h4>
+                <p>Browse available pets and find your perfect match.</p> 
+              </div>
+              <div class="grid-item">
+                <div class="imgBox"    >
+                <img src="public/pre.jpg" alt="Basketball">
+            </div>
+                <h4>Pre-Adoption Counseling</h4>
+                <p>We offer guidance on selecting the right type of pet, preparing your home, and understanding the responsibilities of pet ownership.</p> 
+              </div>
+              <div class="grid-item">
+                <div class="imgBox"    >
+                <img src="public/support.jpg" alt="Sport 3">
+            </div>
+                <h4>Adoption Support</h4>
+                <p>We provide resources to ensure a smooth transition</p> 
+              </div>  
+            </div>
+          </section>
+
+          <section id="registration" class="registration">
+            <h2>Calculate the Registration Fee</h2>
+            <div class="calBox">
+                <select id="sport" class="dropdown">
+                    <option value="soccer">Soccer</option>
+                    <option value="basketball">Basketball</option>
+                    <option value="softball">Softball</option>
+                    <option value="tennis">Tennis</option>
+                    <option value="volleyball">Volleyball</option>
+                </select>
+                <select id="age-group" class="dropdown">
+                    <option value="under10">Under 10 years</option>
+                    <option value="10-15">10-15 years</option>
+                    <option value="15-20">15-20 years</option>
+                    <option value="20+">20+ years</option>
+                </select>
+                <button id="calc-button">Calculate Fee</button>
+                <p id="fee-result"></p>
+            </div>
+        </section>
+    
+        <section id="contact" class="contact-form">
+            <h2>For Any query</h2>
+            <form id="inquiry-form">
+                <label for="name">Name:</label>
+                <input type="text" id="name" required>
+                <label for="email">Email (Optional):</label>
+                <input type="email" id="email" required>
+                <label for="phone">Phone Number:</label>
+                <input type="tel" id="phone">
+                <label for="inquiry">Message</label>
+                <textarea id="inquiry" rows="5"></textarea>
+                    <button type="submit" id="submit-button">Submit</button>
+                    <p id="success-message" style="display: none;">Your query has been successfully submitted!</p>
+            </form>
+        </section>
+
+
+        <section id="contacts" class="contact-page">
+            <div class="container">
+                <h2>Contact Us</h2>
+                <div class="contact-info">
+                    <div class="contact-item">
+                        <i class="fas fa-map-marker-alt"></i>
+                        <p>City, State</p> 
+                    </div>
+                    <div class="contact-item">
+                        <i class="fas fa-phone"></i>
+                        <p>(666) 658-9999</p>
+                    </div>
+                    <div class="contact-item">
+                        <i class="fas fa-envelope"></i>
+                        <p>hello@petadoption.org</p>
+                    </div>
+                </div>
+         
+              
+            </div>
+        </section>
+        
+    </main>
+
+    <footer>
+        <p>&copy; Pet Adoption Center. All Rights Reserved.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
