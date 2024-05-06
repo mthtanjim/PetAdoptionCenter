@@ -1,50 +1,50 @@
 const sportSelect = document.getElementById('sport');
 const ageGroupSelect = document.getElementById('age-group');
+const petTypeSelect = document.getElementById('pet-type');
+const petAgeSelect = document.getElementById('pet-age');
+const careDaysInput = document.getElementById('care-days');
 const calcButton = document.getElementById('calc-button');
 const feeResult = document.getElementById('fee-result');
 
-// Example fee structure
-const fees = {
-    soccer: {
-        under10: 50,
-        '10-15': 75,
-        '15-20': 85,
-        '20+': 100,
+const costs = {
+    dog: {
+        'puppy-kitten': 35, // Daily cost
+        adult: 30,
+        senior: 25 
     },
-    basketball: {
-        under10: 55,
-        '10-15': 80,
-        '15-20': 90,
-        '20+': 110,
+    cat: {
+        'puppy-kitten': 25, 
+        adult: 20,
+        senior: 18
     },
-    softball: {
-        under10: 45,
-        '10-15': 70,
-        '15-20': 80,
-        '20+': 95,
+    bird: {
+        'puppy-kitten': 15, 
+        adult: 10,
+        senior: 8
     },
-    tennis: {
-        under10: 60,
-        '10-15': 85,
-        '15-20': 95,
-        '20+': 120,
+    mammal: {
+        'puppy-kitten': 22, 
+        adult: 13,
+        senior: 9
     },
-    volleyball: {
-        under10: 50,
-        '10-15': 75,
-        '15-20': 85,
-        '20+': 100,
+    other: { 
+        'puppy-kitten': 10, 
+        adult: 5,
+        senior: 3
     }
 };
 
 calcButton.addEventListener('click', () => {
-    const sport = sportSelect.value;
-    const ageGroup = ageGroupSelect.value;
+    const petType = petTypeSelect.value;
+    const petAge = petAgeSelect.value;
+    const days = parseInt(careDaysInput.value); 
 
-    if (fees[sport] && fees[sport][ageGroup]) {
-        feeResult.textContent = 'Registration Fee: $' + fees[sport][ageGroup];
+    if (days > 0) {
+        const dailyCost = costs[petType][petAge];
+        const totalCost = dailyCost * days;
+        feeResult.textContent = 'Estimated Care Cost: $' + totalCost;
     } else {
-        feeResult.textContent = 'Fee information not available, contact in helpline number.';
+        feeResult.textContent = 'Please fill out all fields with valid values.';
     }
 });
 

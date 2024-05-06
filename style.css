@@ -215,13 +215,13 @@ background-color: rgba(24, 24, 24, 0.411);
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    background-color: rgba(128, 128, 128, 0.075);
+    background-color: rgba(97, 47, 0, 0.918);
     min-height: 60vh;
 }
 
 .registration, .contact-form {
-    border: 1px solid #ccc;
-    padding: 20px;
+    color: rgba(255, 255, 255, 0.808);
+    padding: 18px;
     padding-bottom: 20px;
 }
 
@@ -232,16 +232,16 @@ background-color: rgba(24, 24, 24, 0.411);
 }
 
 .dropdown {
-    width: clamp(15.625rem, 11.547vw + 12.637rem, 21.875rem);
+    width:  clamp(17.5rem, 42.725vw + 6.445rem, 40.625rem);
     font-size: 16px; /* Increase the font size */
-    padding: 8px; /* Add padding */
+    padding: clamp(0.75rem, 0.577vw + 0.601rem, 1.063rem);
     margin: 8px; /* Add margin */
 }
 
 .calBox p {
-    background-color: rgba(64, 227, 15, 0.374);
+    /* background-color: rgba(227, 195, 15, 0.374); */
     padding: 20px 25px;
-    border: 2px solid rgba(128, 128, 128, 0.187);
+    font-size: clamp(1.25rem, 1.155vw + 0.951rem, 1.875rem);
 }
 
 .dropdown option {
@@ -252,7 +252,7 @@ background-color: rgba(24, 24, 24, 0.411);
     font-size: 16px; /* Increase the font size */
     padding: 10px 20px; /* Add padding */
     margin: 10px 0; /* Add margin */
-    background-color: #3e871e; /* Change button color */
+    background-color: #f3b50c77; /* Change button color */
     color: #fff; /* Change text color */
     border: none;
     cursor: pointer;

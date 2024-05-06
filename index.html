@@ -63,9 +63,9 @@
               </div>  
             </div>
           </section>
-
+<!-- 
           <section id="registration" class="registration">
-            <h2>Calculate the Registration Fee</h2>
+            <h2>Care Cost Calculator</h2>
             <div class="calBox">
                 <select id="sport" class="dropdown">
                     <option value="soccer">Soccer</option>
@@ -84,6 +84,29 @@
                 <p id="fee-result"></p>
             </div>
         </section>
+     -->
+
+     <section id="registration" class="registration">
+        <h2>Calculate Pet Care Costs</h2>
+        <div class="calBox">
+            <select id="pet-type" class="dropdown">
+                <option value="dog">Dog</option>
+                <option value="cat">Cat</option>
+                <option value="bird">Birds</option>
+                <option value="mammal">Small Mammals</option>
+                <option value="other">Other</option> 
+            </select>
+            <select id="pet-age" class="dropdown">
+                <option value="puppy-kitten">Puppy/Kitten (Under 1 year)</option>
+                <option value="adult">Adult (1-7 years)</option>
+                <option value="senior">Senior (7+ years)</option> 
+            </select>
+            <input class="dropdown" type="number" id="care-days" placeholder="Number of Days">
+            <button id="calc-button">Calculate Cost</button>
+            <p id="fee-result"></p>
+        </div>
+    </section>
+
     
         <section id="contact" class="contact-form">
             <h2>For Any query</h2>
